@@ -14,7 +14,7 @@ class AddFromNumberToBusinessesTable extends Migration
     public function up()
     {
         Schema::table('business', function (Blueprint $table) {
-            $table->string('from_number', 360);
+            $table->string('from_number', 360)->nullable();
         });
     }
 
